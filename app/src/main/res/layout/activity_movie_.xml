@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movie_Activity"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-40dp">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="175dp"
+                android:background="@drawable/loading"
+                android:id="@+id/movie_thumbnail"
+                android:scaleType="centerCrop"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Title"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:id="@+id/ma_title"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textSize="18sp"
+                android:id="@+id/ma_year"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMDB ID: "
+                android:textSize="18sp"
+                android:id="@+id/ma_imdbid"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Save/Delete"
+                android:id="@+id/btn_savedelete"
+                android:textSize="20sp"
+                android:backgroundTint="@color/OldBlue"
+                android:textColor="@color/White" />
+
+<!--            <Button-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Delete"-->
+<!--                android:id="@+id/btn_delete"-->
+<!--                android:textSize="20sp"-->
+<!--                android:background="@color/OldBlue"-->
+<!--                android:textColor="@color/White"-->
+<!--                  android:visibility="gone"-->
+<!--                />-->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
